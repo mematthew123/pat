@@ -1,63 +1,50 @@
 ---
-import client from "@data/client.json";
+import client from '@data/client.json';
 ---
 
 <!-- ============================================ --><!--                   Footer                     --><!-- ============================================ -->
-<footer id="footer">
-  <div class="container">
-    <div class="left-section">
-      <a class="logo" href="/"
-        ><img
-          loading="lazy"
-          decoding="async"
-          src="/assets/svgs/logo-white.svg"
-          alt="logo"
-          width="264"
-          height="78"
-        /></a
-      >
-      <p>
-        Extra content if you need it, if not you can delete this whole p tag. I
-        usually do.
-      </p>
+<footer id='footer'>
+  <div class='container'>
+    <div class='left-section'>
+      <a class='logo' href='/'> <p class='cs-logo-text'>McKay Painting</p></a>
     </div>
-    <div class="right-section">
-      <div class="lists">
+    <div class='right-section'>
+      <div class='lists'>
         <ul>
           <li>
             <h2>Information</h2>
           </li>
           <li>
-            <a href="/">Home</a>
+            <a href='/'>Home</a>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <a href='/about'>About Us</a>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <a href='/projects'>Projects</a>
           </li>
           <li>
-            <a href="/testimonials">Reviews</a>
+            <a href='/testimonials'>Reviews</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href='/contact'>Contact</a>
           </li>
         </ul>
         <ul>
           <li>
             <h2>Services</h2>
           </li>
-          <li>Service1</li>
-          <li>Service2</li>
-          <li>Service4</li>
-          <li>Service5</li>
+          <li>Interior Painting</li>
+          <li>Exterior Painting</li>
+          <li>Residental Painting</li>
+          <li>Commercial Painting</li>
         </ul>
         <ul>
           <li>
             <h2>Contact</h2>
           </li>
           <li>
-            <a href="/contact">
+            <a href='/contact'>
               {client.address.lineOne}<br />
               {client.address.lineTwo}<br />
               {client.address.city}
@@ -79,9 +66,9 @@ import client from "@data/client.json";
     </div>
   </div>
 
-  <div class="credit">
-    <span>Designed and Hand Coded by</span>
-    <a href="/" target="_blank" rel="noopener">Your Company Name</a>
-    <span class="copyright"> Copyright 2023 - Present</span>
+  <div class='credit'>
+    <span>Designed and Hand Coded by</span>{' '}
+    <a href='/' target='_blank' rel='noopener'>Zephyr Pixels</a>{' '}
+    <span class='copyright'> Copyright 2023 - Present</span>
   </div>
 </footer>

@@ -83,7 +83,7 @@
     }
 
     &:before {
-      content: "";
+      content: '';
 
       //Transition properties
       width: 0;
@@ -107,40 +107,43 @@
   /* roboto-regular - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 400;
     font-display: swap;
-    src: local(""),
-      url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"),
+    src:
+      local(''),
+      url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'),
       /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-700 - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 700;
     font-display: swap;
-    src: local(""),
-      url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"),
+    src:
+      local(''),
+      url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'),
       /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("/assets/fonts/roboto-v29-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/assets/fonts/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-900 - latin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-weight: 900;
     font-display: swap;
-    src: local(""),
-      url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"),
+    src:
+      local(''),
+      url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'),
       /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url("/assets/fonts/roboto-v29-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('/assets/fonts/roboto-v29-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   body,
   html {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -272,7 +275,9 @@
     .cs-moon {
       z-index: 2;
       // Transition properties
-      transition: transform 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
 
       // fill: yellow; --> uncomment to change the color of the moon if needed
     }
@@ -282,7 +287,9 @@
       z-index: 1;
       // Transition property
       transform: translate(-50%, 100%);
-      transition: transform 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        opacity 0.3s;
     }
   }
 }
@@ -316,7 +323,7 @@
 
   #cs-navigation {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -328,7 +335,7 @@
 
     &:before {
       /* black blurred overlay */
-      content: "";
+      content: '';
       width: 0%;
       height: 100vh;
       background: rgba(0, 0, 0, 0.6);
@@ -338,7 +345,9 @@
       top: 100%;
       right: 0;
       z-index: -11;
-      transition: width 0.5s, opacity 0.3s;
+      transition:
+        width 0.5s,
+        opacity 0.3s;
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
     }
@@ -381,13 +390,19 @@
       align-items: center;
       z-index: 10;
 
-      img {
-        width: 100%;
-        height: 100%;
-        /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-        object-fit: contain;
-        /* places the image to the left edge of the parent */
-        object-position: left;
+      .cs-logo-text {
+        /* 14px - 18px */
+        font-size: clamp(0.875rem, 1.8vw, 1.125rem);
+        line-height: 1em;
+        /* Doubled this as well for consistency */
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        /* Doubled for consistency */
+        font-weight: 700;
+        color: var(--secondary);
+        display: block;
+        margin: 0;
+        padding: 0;
       }
     }
 
@@ -442,7 +457,10 @@
 
     .cs-line1 {
       top: 0;
-      transition: transform 0.5s, top 0.3s, left 0.3s;
+      transition:
+        transform 0.5s,
+        top 0.3s,
+        left 0.3s;
       animation-duration: 0.7s;
       animation-timing-function: ease;
       animation-direction: normal;
@@ -453,7 +471,10 @@
     .cs-line2 {
       top: 50%;
       transform: translateX(-50%) translateY(-50%);
-      transition: top 0.3s, left 0.3s, transform 0.5s;
+      transition:
+        top 0.3s,
+        left 0.3s,
+        transform 0.5s;
       animation-duration: 0.7s;
       animation-timing-function: ease;
       animation-direction: normal;
@@ -462,7 +483,9 @@
 
     .cs-line3 {
       bottom: 0;
-      transition: bottom 0.3s, opacity 0.3s;
+      transition:
+        bottom 0.3s,
+        opacity 0.3s;
     }
 
     .cs-ul-wrapper {
@@ -477,7 +500,9 @@
       z-index: -1;
       overflow: hidden;
       transform: scaleX(0);
-      transition: transform 0.4s, opacity 0.3s;
+      transition:
+        transform 0.4s,
+        opacity 0.3s;
       transform-origin: top right;
     }
 
@@ -504,7 +529,9 @@
       opacity: 0;
       /* transition from these values */
       transform: translateX(-40/16rem);
-      transition: transform 0.6s, opacity 0.9s;
+      transition:
+        transform 0.6s,
+        opacity 0.9s;
 
       &:nth-of-type(1) {
         transition-delay: 0.05s;
@@ -547,7 +574,7 @@
 
       &:before {
         /* active state underline */
-        content: "";
+        content: '';
         width: 100%;
         height: 1px;
         background: currentColor;
@@ -653,8 +680,13 @@
       gap: (12/16rem);
       overflow: hidden;
       transform: scale(0);
-      transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s,
-        transform 0.3s, visibility 0.3s;
+      transition:
+        padding 0.3s,
+        margin 0.3s,
+        height 0.3s,
+        opacity 0.3s,
+        transform 0.3s,
+        visibility 0.3s;
       transform-origin: top right;
     }
 
@@ -715,7 +747,10 @@
       z-index: -100;
       overflow: hidden;
       transform: scaleY(0);
-      transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+      transition:
+        transform 0.3s,
+        visibility 0.3s,
+        opacity 0.3s;
       transform-origin: top;
     }
 
@@ -729,7 +764,9 @@
       opacity: 0;
       display: block;
       transform: translateY(-10/16rem);
-      transition: opacity 0.6s, transform 0.6s;
+      transition:
+        opacity 0.6s,
+        transform 0.6s;
 
       &:nth-of-type(1) {
         transition-delay: 0.05s;
@@ -784,7 +821,9 @@
         padding: (12/16rem);
         color: var(--bodyTextColor);
         display: block;
-        transition: color 0.3s, background-color 0.3s;
+        transition:
+          color 0.3s,
+          background-color 0.3s;
 
         &:hover {
           background-color: #f7f7f7;
@@ -830,7 +869,7 @@
 @media only screen and (min-width: 64rem) {
   #cs-navigation {
     /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: 'Roboto', 'Arial', sans-serif;
     width: 100%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
@@ -866,11 +905,21 @@
       align-items: center;
       z-index: 100;
 
-      img {
-        width: 100%;
-        height: 100%;
-        /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-        object-fit: contain;
+      .cs-logo-text {
+        /* 20px - 24px */
+        font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+        line-height: 1.5em;
+        /* Doubled this as well for consistency */
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        /* Doubled for consistency */
+        font-weight: 700;
+        color: var(--secondary);
+        display: block;
+        // we want to apply margin to the top and bottom of the logo text
+        margin: calc(12 / 16 * 1rem) 0;
+        // we want padding to apply to the top and bottom of the logo text
+        padding: calc(12 / 16 * 1rem) 0;
       }
     }
 
@@ -915,7 +964,7 @@
 
       &:before {
         /* active state underline */
-        content: "";
+        content: '';
         width: 0%;
         height: 2px;
         background: var(--primary);
@@ -971,7 +1020,7 @@
     z-index: 1;
 
     &:before {
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       background: #000;
@@ -1059,7 +1108,7 @@
     position: relative;
 
     &:before {
-      content: "";
+      content: '';
       width: 100%;
       height: 100%;
       background: #000;
@@ -1094,7 +1143,7 @@
     }
 
     .title {
-      font-size: ~"min(9vw, 3rem)";
+      font-size: ~'min(9vw, 3rem)';
       font-weight: 900;
       line-height: 58/48;
       text-align: center;
@@ -1131,10 +1180,10 @@
       display: none;
     }
     &:after {
-      content: "";
+      content: '';
       width: (2000/16rem);
       height: (1108/16rem);
-      background: url("/assets/svgs/cta-squares.svg");
+      background: url('/assets/svgs/cta-squares.svg');
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -1157,7 +1206,7 @@
       transform: translateX(-50%);
 
       &:before {
-        content: "";
+        content: '';
         width: 100%;
         height: 100%;
         background: #000;
@@ -1190,64 +1239,65 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
-    font-size: ~"min(4vw, 1.2em)";
-    padding: (84/16rem) 0 (20/16rem);
-    background: #1c1c1c;
+    background: var(--dark);
+    padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
+    font-size: min(4vw, 1.2em);
 
     .left-section {
-      text-align: center;
       margin: auto;
-      margin-bottom: (50/16rem);
-      .logo {
-        text-align: center;
-        width: auto;
-        height: (32/16em);
-        margin: auto;
-        margin-bottom: (30/16em);
-        display: inline-block;
+      margin-bottom: calc(50 / 16 * 1rem);
+      text-align: center;
 
-        img {
-          width: auto;
-          height: 100%;
-          display: block;
-        }
+      .cs-logo-text {
+        font-size: calc(32 / 32 * 3rem);
+        line-height: 27/16;
+        color: #fff;
+        opacity: 0.9;
+        text-align: center;
+        width: 100%;
+        width: 307/16rem;
+        margin: auto;
+        margin-bottom: calc(50 / 16 * 1rem);
       }
 
       p {
-        font-size: (14/16rem);
+        font-size: calc(14 / 16 * 1rem);
         line-height: 27/14;
+        color: #fff;
+        opacity: 0.9;
         text-align: center;
         width: 100%;
         width: 307/14rem;
         margin: auto;
-        color: #fff;
-        opacity: 0.9;
       }
     }
 
     .right-section {
       width: 96%;
-      max-width: (407/16rem);
+      max-width: calc(407 / 16 * 1rem);
       margin: auto;
+
       .lists {
-        width: 96%;
-        max-width: (307/16rem);
-        margin: auto;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        width: 96%;
+        max-width: calc(307 / 16 * 1rem);
+        margin: auto;
+
         ul {
-          margin-top: 0;
-          margin-bottom: 0;
           padding: 0;
+          margin-bottom: 0;
+          margin-top: 0;
 
           &:nth-of-type(3) {
-            margin-top: (50/16rem);
+            margin-top: calc(50 / 16 * 1rem);
+
             li {
-              margin-bottom: (16/16rem);
               display: flex;
               justify-content: flex-start;
               align-items: center;
+              margin-bottom: calc(16 / 16 * 1rem);
 
               &:last-of-type {
                 margin-bottom: 0;
@@ -1256,40 +1306,42 @@
           }
 
           li {
-            font-size: (18/16rem);
             list-style: none;
-            margin-bottom: (12/16rem);
+            margin-bottom: calc(12 / 16 * 1rem);
             color: #fff;
+            font-size: calc(18 / 16 * 1rem);
             opacity: 0.9;
 
             a {
-              line-height: 21/18em;
               text-decoration: none;
               color: #fff;
+              line-height: 21/18em;
               transition: color 0.3s;
+
               &:hover {
                 color: var(--primary);
               }
             }
           }
+
           h2 {
-            font-size: (18/16rem);
-            font-weight: bold;
-            line-height: 21/18em;
-            text-transform: uppercase;
-            margin-bottom: (37/16rem);
             color: #fff;
+            font-size: calc(18 / 16 * 1rem);
+            line-height: 21/18em;
+            margin-bottom: calc(37 / 16 * 1rem);
+            text-transform: uppercase;
+            font-weight: bold;
             position: relative;
 
             &:before {
-              content: "";
-              width: (97/16rem);
-              height: (2/16rem);
+              content: '';
+              position: absolute;
+              display: block;
+              height: calc(2 / 16 * 1rem);
+              width: calc(97 / 16 * 1rem);
               background: var(--primary);
               opacity: 1;
-              display: block;
-              position: absolute;
-              bottom: (-16/16rem);
+              bottom: calc(-16 / 16 * 1rem);
               left: 0;
             }
           }
@@ -1302,26 +1354,26 @@
       }
 
       .cs-button-solid {
-        width: (250/16rem);
-        height: (53/16rem);
         margin: 0;
-        padding-top: (3/16rem);
+        height: calc(53 / 16 * 1rem);
+        padding-top: calc(3 / 16 * 1rem);
+        width: calc(250 / 16 * 1rem);
       }
     }
 
     .credit {
-      font-size: (16/16rem);
-      line-height: (36/16rem);
-      text-align: center;
+      color: #fff;
       width: 96%;
       margin: auto;
-      margin-top: (100/16rem);
-      color: #fff;
+      text-align: center;
+      margin-top: calc(100 / 16 * 1rem);
+      line-height: calc(36 / 16 * 1rem);
+      font-size: calc(16 / 16 * 1rem);
 
       a {
-        font-size: (16/16rem);
-        text-decoration: none;
         color: var(--primary);
+        text-decoration: none;
+        font-size: calc(16 / 16 * 1rem);
 
         &:hover {
           text-decoration: underline;
@@ -1329,8 +1381,8 @@
       }
 
       .copyright {
-        font-size: (16/16rem);
         display: block;
+        font-size: calc(16 / 16 * 1rem);
       }
     }
   }
@@ -1339,27 +1391,28 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
   #footer {
-    font-size: ~"min(1.2vw, 1em)";
+    font-size: min(1.2vw, 1em);
+
     .container {
-      width: 96%;
-      max-width: (1320/16rem);
-      margin: auto;
-      padding: 0;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       flex-wrap: nowrap;
+      justify-content: space-between;
+      width: 96%;
+      max-width: calc(1320 / 16 * 1rem);
+      margin: auto;
+      padding: 0;
     }
 
     .left-section {
-      text-align: left;
-      width: (409/16rem);
+      width: calc(409 / 16 * 1rem);
       margin: 0;
+      text-align: left;
 
       .logo {
         text-align: left;
-        height: (40/16rem);
         margin-left: 0;
+        height: calc(40 / 16 * 1rem);
       }
 
       p {
@@ -1369,14 +1422,15 @@
     }
 
     .right-section {
-      width: (609/16rem);
-      max-width: none;
       margin: 0;
+      width: calc(609 / 16 * 1rem);
+      max-width: none;
+
       .lists {
         width: 96%;
-        max-width: (769/16rem);
-        max-width: initial;
+        max-width: calc(769 / 16 * 1rem);
         margin: 0;
+        max-width: initial;
 
         ul {
           &:nth-of-type(3) {
@@ -1392,14 +1446,14 @@
               position: relative;
 
               &:before {
-                content: "";
+                content: '';
+                position: absolute;
+                display: block;
+                height: calc(2 / 16 * 1rem);
                 width: 0%;
-                height: (2/16rem);
                 background: var(--primary);
                 opacity: 1;
-                display: block;
-                position: absolute;
-                bottom: (-3/16rem);
+                bottom: calc(-3 / 16 * 1rem);
                 left: 0;
                 transition: width 0.3s;
               }
@@ -1431,7 +1485,7 @@
 @media only screen and (min-width: 0em) {
   body.dark-mode {
     #footer {
-      background: #061623;
+      background: var(--dark);
     }
   }
 }
