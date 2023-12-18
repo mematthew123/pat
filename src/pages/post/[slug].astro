@@ -5,6 +5,8 @@ import Layout from '../../layouts/Layout.astro';
 import { formatDate } from '../../utils';
 import { urlFor } from '../../utils/image';
 import { getPost, getPosts } from '../../utils/sanity';
+import '@styles/root.less';
+import '@styles/dark.less';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -15,10 +17,14 @@ export async function getStaticPaths() {
 
 type Params = InferGetStaticParamsType<typeof getStaticPaths>;
 const { slug } = Astro.params as Params;
+import '@styles/root.less';
+import '@styles/dark.less';
+import Header from '@components/Header.astro';
 
 const post = await getPost(slug);
 ---
 
+<Header />
 <Layout title={post.title!}>
   <section class='post'>
     {
@@ -146,3 +152,6 @@ const post = await getPost(slug);
     }
   }
 </style>
+
+<script defer src='/assets/js/nav.js'></script>
+<script defer src='/assets/js/dark.js'></script>
