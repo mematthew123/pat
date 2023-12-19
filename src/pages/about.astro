@@ -1,36 +1,36 @@
 ---
-import BaseLayout from "src/layouts/BaseLayout.astro";
-import CTA from "@components/CTA.astro";
+import BaseLayout from 'src/layouts/BaseLayout.astro';
+import CTA from '@components/CTA.astro';
 ---
 
 <BaseLayout
-  title="About"
-  description="Meta description for the page"
-  preloadImg={import("../assets/images/cabinets2.jpg")}
+  title='About'
+  description='About McKay Painting'
+  preloadImg={import('../assets/images/cabinets2.jpg')}
 >
   <!-- ============================================ -->
   <!--                    LANDING                   -->
   <!-- ============================================ -->
 
-  <section id="int-hero">
-    <h1 id="home-h">About Us</h1>
+  <section id='int-hero'>
+    <h1 id='home-h'>About Us</h1>
     <picture>
       <source
-        media="(max-width: 600px)"
-        srcset="/assets/images/cabinets2-m.jpg"
+        media='(max-width: 600px)'
+        srcset='/assets/images/cabinets2-m.jpg'
       />
       <source
-        media="(min-width: 601px)"
-        srcset="/assets/images/cabinets2.jpg"
+        media='(min-width: 601px)'
+        srcset='/assets/images/cabinets2.jpg'
       />
       <img
-        aria-hidden="true"
-        decoding="async"
-        src="/assets/images/cabinets2.jpg"
-        alt="kitchen cabinets"
-        loading="eager"
-        width="2500"
-        height="1667"
+        aria-hidden='true'
+        decoding='async'
+        src='/assets/images/cabinets2.jpg'
+        alt='kitchen cabinets'
+        loading='eager'
+        width='2500'
+        height='1667'
       />
     </picture>
   </section>
@@ -39,90 +39,87 @@ import CTA from "@components/CTA.astro";
   <!--                 Side By Side                 -->
   <!-- ============================================ -->
 
-  <section id="sbs">
-    <div class="cs-container">
+  <section id='sbs'>
+    <div class='cs-container'>
       <!-- Left Image Section -->
-      <div class="cs-left">
-        <picture class="cs-picture cs-picture1">
+      <div class='cs-left'>
+        <picture class='cs-picture cs-picture1'>
           <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/cabinets2-m.jpg"
+            media='(max-width: 600px)'
+            srcset='/assets/images/cabinets2-m.jpg'
           />
           <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/cabinets2.jpg"
+            media='(min-width: 601px)'
+            srcset='/assets/images/cabinets2.jpg'
           />
           <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/cabinets2.jpg"
-            alt="cabinets"
-            loading="lazy"
-            width="400"
-            height="563"
+            aria-hidden='true'
+            decoding='async'
+            src='/assets/images/cabinets2.jpg'
+            alt='cabinets'
+            loading='lazy'
+            width='400'
+            height='563'
           />
         </picture>
-        <picture class="cs-picture cs-picture2">
+        <picture class='cs-picture cs-picture2'>
           <source
-            media="(max-width: 600px)"
-            srcset="/assets/images/construction-m.jpg"
+            media='(max-width: 600px)'
+            srcset='/assets/images/construction-m.jpg'
           />
           <source
-            media="(min-width: 601px)"
-            srcset="/assets/images/construction.jpg"
+            media='(min-width: 601px)'
+            srcset='/assets/images/construction.jpg'
           />
           <img
-            aria-hidden="true"
-            decoding="async"
-            src="/assets/images/construction.jpg"
-            alt="house"
-            loading="lazy"
-            width="400"
-            height="563"
+            aria-hidden='true'
+            decoding='async'
+            src='/assets/images/construction.jpg'
+            alt='house'
+            loading='lazy'
+            width='400'
+            height='563'
           />
         </picture>
       </div>
       <!-- Right Content Section-->
-      <div class="cs-right">
-        <span class="cs-topper">About Us</span>
-        <h2 class="cs-title">About Company Title</h2>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
+      <div class='cs-right'>
+        <span class='cs-topper'>About Us</span>
+        <h2 class='cs-title'>McKay Painting</h2>
+        <p class='cs-text'>
+          At McKay Painting, we believe that a fresh coat of paint can transform
+          any space. From faded walls to vibrant rooms, we've been brightening
+          homes and offices since 1999.
         </p>
-        <p class="cs-text">
-          In consequat tincidunt turpis sit amet imperdiet. Praesent Class
-          officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur
-          et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent
-          nonatourean olei aptent taciti sociosqu ad litora torquent per.
+        <p class='cs-text'>
+          Whether Commercial or Residential, we're here to help you paint away
+          the blues. We are experienced in all types of painting projects, from
+          small homes to large offices.
         </p>
-        <div class="cs-flex-group">
-          <p class="cs-flex-p">
-            In consequat tincidunt turpis sit amet imperdiet. Praesent Classei
-            consequat tincidunt turpis sit amet imperdiet for mind.
+        <div class='cs-flex-group'>
+          <p class='cs-flex-p'>
+            We guarantee that you will be satisfied with our work.
           </p>
-          <span class="cs-name">Justin Time</span>
-          <span class="cs-job">CEO-Founder</span>
+          <span class='cs-name'>Pat McKay</span>
+          <span class='cs-job'>CEO-Founder</span>
           <img
-            class="cs-quote-icon"
-            loading="lazy"
-            decoding="async"
-            src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-            alt="gavel"
-            width="136"
-            height="77"
+            class='cs-quote-icon'
+            loading='lazy'
+            decoding='async'
+            src='https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg'
+            alt='gavel'
+            width='136'
+            height='77'
           />
         </div>
-        <a href="/projects" class="cs-button-solid">Our Projects</a>
+        <a href='/projects' class='cs-button-solid'>Our Projects</a>
       </div>
     </div>
   </section>
   <CTA />
 </BaseLayout>
 
-<style lang="less">
+<style lang='less'>
   /* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
 
   /*-- -------------------------- -->
@@ -147,7 +144,7 @@ import CTA from "@components/CTA.astro";
 
       .cs-left {
         /* scaling the font size with the view width */
-        font-size: ~"min(2.31vw, .7em)";
+        font-size: ~'min(2.31vw, .7em)';
         /* using ems so we can use font size to scale the whole section */
         width: (631/16em);
         height: (636/16em);
@@ -274,7 +271,7 @@ import CTA from "@components/CTA.astro";
       }
 
       .cs-left {
-        font-size: ~"min(1.2vw, 1em)";
+        font-size: ~'min(1.2vw, 1em)';
         flex: none;
       }
 

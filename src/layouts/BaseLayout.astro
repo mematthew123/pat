@@ -4,6 +4,7 @@ import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
 import '@styles/root.less';
 import '@styles/dark.less';
+import { ViewTransitions } from 'astro:transitions';
 
 const { description, title, preloadImg = '' } = Astro.props;
 ---
@@ -77,10 +78,11 @@ const { description, title, preloadImg = '' } = Astro.props;
 
     <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
     {preloadImg !== '' && <link rel='preload' as='image' href={preloadImg} />}
+    <ViewTransitions />
 
     <!-- Sitewide Scripts -->
-    <script defer src='/assets/js/nav.js'></script>
-    <script defer src='/assets/js/dark.js'></script>
+    <!-- <script defer src='/assets/js/nav.js'></script>
+    <script defer src='/assets/js/dark.js'></script> -->
 
     <!--For home page, use service keywords for the title, including location for SEO.
             Other pages should just include the page name.
@@ -89,6 +91,7 @@ const { description, title, preloadImg = '' } = Astro.props;
             Home page - House Painting Contractors | Painters and Co. | TestCity, WA
             About Page - About us | Painters and Co.
             -->
+
     <title>
       {
         Astro.url.pathname === '/'

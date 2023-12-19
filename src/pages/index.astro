@@ -4,8 +4,8 @@ import CTA from '@components/CTA.astro';
 ---
 
 <BaseLayout
-  title='Pixel Perfect Websites'
-  description='Meta description for the page'
+  title='McKay Painting'
+  description='Painting away the Blues'
   preloadImg={import('../assets/images/landing.jpg')}
 >
   <!-- ============================================ -->
@@ -16,7 +16,7 @@ import CTA from '@components/CTA.astro';
     <div class='cs-container'>
       <div class='cs-flex-group'>
         <span class='cs-topper'>McKay Painting</span>
-        <h1 class='cs-title'>Painting away the blues</h1>
+        <h1 class='cs-title'>Painting away the Blues</h1>
         <p class='cs-text'>
           We are a licensed and insured painting company specializing in
           residential and commercial properties. We are a family owned and
@@ -40,8 +40,8 @@ import CTA from '@components/CTA.astro';
 
     <!-- Background Image -->
     <picture class='cs-picture'>
-      <source media='(max-width: 600px)' srcset='src/assets/images/nice.jpeg' />
-      <source media='(min-width: 601px)' srcset='src/assets/images/nice.jpeg' />
+      <source media='(max-width: 600px)' srcset='/assets/images/nice.jpeg' />
+      <source media='(min-width: 601px)' srcset='/assets/images/nice.jpeg' />
       <img
         aria-hidden='true'
         decoding='async'
@@ -124,16 +124,16 @@ import CTA from '@components/CTA.astro';
         <picture class='cs-picture cs-picture1'>
           <source
             media='(max-width: 600px)'
-            srcset='src/assets/images/roller.webp'
+            srcset='/assets/images/roller.webp'
           />
           <source
             media='(min-width: 601px)'
-            srcset='src/assets/images/roller.webp'
+            srcset='/assets/images/roller.webp'
           />
           <img
             aria-hidden='true'
             decoding='async'
-            src='src/assets/images/cabinets2.jpg'
+            src='/assets/images/cabinets2.jpg'
             alt='cabinets'
             loading='lazy'
             width='400'
@@ -143,16 +143,16 @@ import CTA from '@components/CTA.astro';
         <picture class='cs-picture cs-picture2'>
           <source
             media='(max-width: 600px)'
-            srcset='src/assets/images/finished.webp'
+            srcset='/assets/images/finished.webp'
           />
           <source
             media='(min-width: 601px)'
-            srcset='src/assets/images/finished.webp'
+            srcset='/assets/images/finished.webp'
           />
           <img
             aria-hidden='true'
             decoding='async'
-            src='src/assets/images/construction.jpg'
+            src='/assets/images/construction.jpg'
             alt='house'
             loading='lazy'
             width='400'
@@ -211,16 +211,16 @@ import CTA from '@components/CTA.astro';
         <picture class='cs-picture cs-picture1'>
           <source
             media='(max-width: 600px)'
-            srcset='src/assets/images/construction-m.jpg'
+            srcset='/assets/images/construction-m.jpg'
           />
           <source
             media='(min-width: 601px)'
-            srcset='src/assets/images/construction.jpg'
+            srcset='/assets/images/construction.jpg'
           />
           <img
             aria-hidden='true'
             decoding='async'
-            src='src/assets/images/construction.jpg'
+            src='/assets/images/construction.jpg'
             alt='house'
             loading='lazy'
             width='400'
@@ -230,16 +230,16 @@ import CTA from '@components/CTA.astro';
         <picture class='cs-picture cs-picture2'>
           <source
             media='(max-width: 600px)'
-            srcset='src/assets/images/cabinets2-m.jpg'
+            srcset='/assets/images/cabinets2-m.jpg'
           />
           <source
             media='(min-width: 601px)'
-            srcset='src/assets/images/cabinets2.jpg'
+            srcset='/assets/images/cabinets2.jpg'
           />
           <img
             aria-hidden='true'
             decoding='async'
-            src='src/assets/images/cabinets2.jpg'
+            src='/assets/images/cabinets2.jpg'
             alt='cabinets'
             loading='lazy'
             width='400'
