@@ -1,6 +1,5 @@
 ---
 import BaseLayout from 'src/layouts/BaseLayout.astro';
-import '@styles/blog.less';
 import { getPosts } from '../utils/sanity';
 import Card from '@components/Card.astro';
 
@@ -19,18 +18,12 @@ const posts = await getPosts();
   <section id='int-hero'>
     <h1 id='home-h'>Blog</h1>
     <picture>
-      <source
-        media='(max-width: 600px)'
-        srcset='/assets/images/cabinets2-m.jpg'
-      />
-      <source
-        media='(min-width: 601px)'
-        srcset='/assets/images/cabinets2.jpg'
-      />
+      <source media='(max-width: 600px)' srcset='/assets/images/fun.jpeg' />
+      <source media='(min-width: 601px)' srcset='/assets/images/fun.jpeg' />
       <img
         aria-hidden='true'
         decoding='async'
-        src='/assets/images/cabinets2.jpg'
+        src='/assets/images/fun.jpeg'
         alt='kitchen cabinets'
         loading='eager'
         width='2500'

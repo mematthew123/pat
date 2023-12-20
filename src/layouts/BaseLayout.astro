@@ -78,7 +78,7 @@ const { description, title, preloadImg = '' } = Astro.props;
 
     <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
     {preloadImg !== '' && <link rel='preload' as='image' href={preloadImg} />}
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
 
     <!-- Sitewide Scripts -->
     <script defer src='/assets/js/nav.js'></script>
